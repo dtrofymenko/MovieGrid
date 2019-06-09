@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570320A22AD04D500B0E3AF /* AppDelegate.swift */; };
+		1570320D22AD04D500B0E3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570320C22AD04D500B0E3AF /* ViewController.swift */; };
+		1570321022AD04D500B0E3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1570320E22AD04D500B0E3AF /* Main.storyboard */; };
+		1570321222AD04D600B0E3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1570321122AD04D600B0E3AF /* Assets.xcassets */; };
+		1570321522AD04D600B0E3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */; };
+		1570322022AD04D700B0E3AF /* MoviewGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570321F22AD04D700B0E3AF /* MoviewGridTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1570321C22AD04D700B0E3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 157031FF22AD04D500B0E3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1570320622AD04D500B0E3AF;
+			remoteInfo = MoviewGrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1570320722AD04D500B0E3AF /* MoviewGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviewGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1570320A22AD04D500B0E3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1570320C22AD04D500B0E3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1570320F22AD04D500B0E3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1570321122AD04D600B0E3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1570321422AD04D600B0E3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1570321622AD04D600B0E3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1570321B22AD04D700B0E3AF /* MoviewGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviewGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1570321F22AD04D700B0E3AF /* MoviewGridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewGridTests.swift; sourceTree = "<group>"; };
+		1570322122AD04D700B0E3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1570320422AD04D500B0E3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1570321822AD04D600B0E3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157031FE22AD04D500B0E3AF = {
+			isa = PBXGroup;
+			children = (
+				1570320922AD04D500B0E3AF /* MoviewGrid */,
+				1570321E22AD04D700B0E3AF /* MoviewGridTests */,
+				1570320822AD04D500B0E3AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1570320822AD04D500B0E3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1570320722AD04D500B0E3AF /* MoviewGrid.app */,
+				1570321B22AD04D700B0E3AF /* MoviewGridTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1570320922AD04D500B0E3AF /* MoviewGrid */ = {
+			isa = PBXGroup;
+			children = (
+				1570320A22AD04D500B0E3AF /* AppDelegate.swift */,
+				1570320C22AD04D500B0E3AF /* ViewController.swift */,
+				1570320E22AD04D500B0E3AF /* Main.storyboard */,
+				1570321122AD04D600B0E3AF /* Assets.xcassets */,
+				1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */,
+				1570321622AD04D600B0E3AF /* Info.plist */,
+			);
+			path = MoviewGrid;
+			sourceTree = "<group>";
+		};
+		1570321E22AD04D700B0E3AF /* MoviewGridTests */ = {
+			isa = PBXGroup;
+			children = (
+				1570321F22AD04D700B0E3AF /* MoviewGridTests.swift */,
+				1570322122AD04D700B0E3AF /* Info.plist */,
+			);
+			path = MoviewGridTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1570320622AD04D500B0E3AF /* MoviewGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1570322422AD04D700B0E3AF /* Build configuration list for PBXNativeTarget "MoviewGrid" */;
+			buildPhases = (
+				1570320322AD04D500B0E3AF /* Sources */,
+				1570320422AD04D500B0E3AF /* Frameworks */,
+				1570320522AD04D500B0E3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoviewGrid;
+			productName = MoviewGrid;
+			productReference = 1570320722AD04D500B0E3AF /* MoviewGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1570321A22AD04D600B0E3AF /* MoviewGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1570322722AD04D700B0E3AF /* Build configuration list for PBXNativeTarget "MoviewGridTests" */;
+			buildPhases = (
+				1570321722AD04D600B0E3AF /* Sources */,
+				1570321822AD04D600B0E3AF /* Frameworks */,
+				1570321922AD04D600B0E3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1570321D22AD04D700B0E3AF /* PBXTargetDependency */,
+			);
+			name = MoviewGridTests;
+			productName = MoviewGridTests;
+			productReference = 1570321B22AD04D700B0E3AF /* MoviewGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157031FF22AD04D500B0E3AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CloudMade;
+				TargetAttributes = {
+					1570320622AD04D500B0E3AF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1570321A22AD04D600B0E3AF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1570320622AD04D500B0E3AF;
+					};
+				};
+			};
+			buildConfigurationList = 1570320222AD04D500B0E3AF /* Build configuration list for PBXProject "MoviewGrid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 157031FE22AD04D500B0E3AF;
+			productRefGroup = 1570320822AD04D500B0E3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1570320622AD04D500B0E3AF /* MoviewGrid */,
+				1570321A22AD04D600B0E3AF /* MoviewGridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1570320522AD04D500B0E3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1570321522AD04D600B0E3AF /* LaunchScreen.storyboard in Resources */,
+				1570321222AD04D600B0E3AF /* Assets.xcassets in Resources */,
+				1570321022AD04D500B0E3AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1570321922AD04D600B0E3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1570320322AD04D500B0E3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1570320D22AD04D500B0E3AF /* ViewController.swift in Sources */,
+				1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1570321722AD04D600B0E3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1570322022AD04D700B0E3AF /* MoviewGridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1570321D22AD04D700B0E3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1570320622AD04D500B0E3AF /* MoviewGrid */;
+			targetProxy = 1570321C22AD04D700B0E3AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1570320E22AD04D500B0E3AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1570320F22AD04D500B0E3AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1570321422AD04D600B0E3AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1570322222AD04D700B0E3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1570322322AD04D700B0E3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1570322522AD04D700B0E3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviewGrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dtrofymenko.MoviewGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1570322622AD04D700B0E3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviewGrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dtrofymenko.MoviewGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1570322822AD04D700B0E3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviewGridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dtrofymenko.MoviewGridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoviewGrid.app/MoviewGrid";
+			};
+			name = Debug;
+		};
+		1570322922AD04D700B0E3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviewGridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dtrofymenko.MoviewGridTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoviewGrid.app/MoviewGrid";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1570320222AD04D500B0E3AF /* Build configuration list for PBXProject "MoviewGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1570322222AD04D700B0E3AF /* Debug */,
+				1570322322AD04D700B0E3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1570322422AD04D700B0E3AF /* Build configuration list for PBXNativeTarget "MoviewGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1570322522AD04D700B0E3AF /* Debug */,
+				1570322622AD04D700B0E3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1570322722AD04D700B0E3AF /* Build configuration list for PBXNativeTarget "MoviewGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1570322822AD04D700B0E3AF /* Debug */,
+				1570322922AD04D700B0E3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 157031FF22AD04D500B0E3AF /* Project object */;
+}
