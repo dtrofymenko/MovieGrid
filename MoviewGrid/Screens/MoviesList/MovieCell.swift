@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieCell: UICollectionViewCell {
     static let identifier = "MovieCell"
@@ -28,9 +29,17 @@ class MovieCell: UICollectionViewCell {
         setup()
     }
 
+    var item: MoviesListItem?
     func update(item: MoviesListItem) {
+        self.item = item
         titleLabel.text = item.title
-        contentView.setNeedsLayout()
+    }
+
+    func willAppear() {
+        guard let posterURL = item?.posterURL else { return }
+        imageView.kf.setImage(with: posterURL,
+                              options: [.backgroundDecode,
+                                        .downloadPriority(1.0)])
     }
 
     // MARK: - UIView

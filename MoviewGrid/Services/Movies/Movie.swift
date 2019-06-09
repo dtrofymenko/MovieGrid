@@ -43,3 +43,11 @@ struct Movie: Decodable {
         overview = try values.decode(String.self, forKey: .overview)
     }
 }
+
+extension Movie {
+    func posterURL(width: Int) -> URL? {
+        guard let posterPath = posterPath else { return nil }
+        let widthComponent = "w\(width)"
+        return URL(string: "http://image.tmdb.org/t/p/" + widthComponent + posterPath)
+    }
+}

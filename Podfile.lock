@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - Kingfisher (5.5.0)
   - OHHTTPStubs/Core (8.0.0)
   - OHHTTPStubs/Default (8.0.0):
     - OHHTTPStubs/Core
@@ -16,17 +17,20 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
   - OHHTTPStubs/Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - OHHTTPStubs
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
 
-PODFILE CHECKSUM: 4d1f9697cfd8122d460278a741844a29df1374b5
+PODFILE CHECKSUM: e421c861849c9ad6ebaff13b3f237ebe3e13decb
 
 COCOAPODS: 1.5.3

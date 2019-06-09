@@ -10,6 +10,7 @@ import Foundation
 
 struct MoviesListItem: Equatable {
     let title: String
+    let posterURL: URL?
 }
 
 protocol MoviesListView: ModelView {
@@ -90,7 +91,8 @@ class MoviesListViewModel: ViewModel {
                 case .success(let model):
                     self.currentPage = page
                     viewData.items += model.results.map {
-                        return MoviesListItem(title: $0.title)
+                        return MoviesListItem(title: $0.title,
+                                              posterURL:$0.posterURL(width: 300))
                     }
                 }
             }

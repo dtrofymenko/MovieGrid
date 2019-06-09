@@ -6,6 +6,8 @@ target 'MoviewGrid' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'Kingfisher'
+  
   target 'MoviewGridTests' do
     inherit! :search_paths
     pod 'OHHTTPStubs/Swift'

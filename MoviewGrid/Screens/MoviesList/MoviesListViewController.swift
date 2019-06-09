@@ -83,6 +83,7 @@ class MoviesListViewController: ModelViewController<MoviesListViewModel>, Movies
                 self.viewModel.loadMore()
             }
         }
+        (cell as? MovieCell)?.willAppear()
     }
 
     // MARK: - UICollectionViewDelegateFlowLayout
