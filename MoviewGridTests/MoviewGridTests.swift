@@ -3,7 +3,7 @@
 //  MoviewGridTests
 //
 //  Created by Dmytro Trofymenko on 6/9/19.
-//  Copyright © 2019 CloudMade. All rights reserved.
+//  Copyright © 2019 Dmytro Trofymenko. All rights reserved.
 //
 
 import XCTest
