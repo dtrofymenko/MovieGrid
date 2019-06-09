@@ -11,6 +11,6 @@ import UIKit
 class MovieDetailsViewController: ModelViewController<MovieDetailsViewModel>, MovieDetailsView {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = viewModel.movieDetails.name
+        title = viewModel.movieDetails.title
     }
 }

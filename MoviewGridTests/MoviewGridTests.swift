@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import OHHTTPStubs
 @testable import MoviewGrid
 
 class MoviewGridTests: XCTestCase {
@@ -16,7 +17,7 @@ class MoviewGridTests: XCTestCase {
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        OHHTTPStubs.removeAllStubs()
     }
 
     func testExample() {

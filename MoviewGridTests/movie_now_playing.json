@@ -1,0 +1,399 @@
+{
+    "results": [
+        {
+            "vote_count": 140,
+            "id": 450001,
+            "video": false,
+            "vote_average": 5.2,
+            "title": "Master Z: Ip Man Legacy",
+            "popularity": 36.185,
+            "poster_path": "/6VxEvOF7QDovsG6ro9OVyjH07LF.jpg",
+            "original_language": "cn",
+            "original_title": "葉問外傳：張天志",
+            "genre_ids": [
+                28
+            ],
+            "backdrop_path": "/grtVFGJ4ts0nDAPpc1JWbBoVKTu.jpg",
+            "adult": false,
+            "overview": "After being defeated by Ip Man, Cheung Tin Chi is attempting to keep a low profile. While going about his business, he gets into a fight with a foreigner by the name of Davidson, who is a big boss behind the bar district. Tin Chi fights hard with Wing Chun and earns respect.",
+            "release_date": "2018-12-20"
+        },
+        {
+            "vote_count": 1,
+            "id": 479455,
+            "video": false,
+            "vote_average": 10,
+            "title": "Men in Black: International",
+            "popularity": 35.006,
+            "poster_path": "/dPrUPFcgLfNbmDL8V69vcrTyEfb.jpg",
+            "original_language": "en",
+            "original_title": "Men in Black: International",
+            "genre_ids": [
+                28,
+                35,
+                878,
+                12
+            ],
+            "backdrop_path": "/2SBStvzMSzScJjZE9uTn3vIgo7b.jpg",
+            "adult": false,
+            "overview": "The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest, most global threat to date: a mole in the Men in Black organization.",
+            "release_date": "2019-06-12"
+        },
+        {
+            "vote_count": 469,
+            "id": 456740,
+            "video": false,
+            "vote_average": 4.9,
+            "title": "Hellboy",
+            "popularity": 34.874,
+            "poster_path": "/bk8LyaMqUtaQ9hUShuvFznQYQKR.jpg",
+            "original_language": "en",
+            "original_title": "Hellboy",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "backdrop_path": "/5BkSkNtfrnTuKOtTaZhl8avn4wU.jpg",
+            "adult": false,
+            "overview": "Hellboy comes to England, where he must defeat Nimue, Merlin's consort and the Blood Queen. But their battle will bring about the end of the world, a fate he desperately tries to turn away.",
+            "release_date": "2019-04-10"
+        },
+        {
+            "vote_count": 339,
+            "id": 487297,
+            "video": false,
+            "vote_average": 5.8,
+            "title": "What Men Want",
+            "popularity": 32.502,
+            "poster_path": "/30IiwvIRqPGjUV0bxJkZfnSiCL.jpg",
+            "original_language": "en",
+            "original_title": "What Men Want",
+            "genre_ids": [
+                35,
+                14,
+                10749
+            ],
+            "backdrop_path": "/umecegsPpKr2ZXA62Da9CQBVoIO.jpg",
+            "adult": false,
+            "overview": "Magically able to hear what men are thinking, a sports agent uses her newfound ability to turn the tables on her overbearing male colleagues.",
+            "release_date": "2019-02-08"
+        },
+        {
+            "vote_count": 286,
+            "id": 425505,
+            "video": false,
+            "vote_average": 6.2,
+            "title": "Kin",
+            "popularity": 32.081,
+            "poster_path": "/9qYKrgzHbYtKej9Gvd7NxJvGiC2.jpg",
+            "original_language": "en",
+            "original_title": "Kin",
+            "genre_ids": [
+                878,
+                28
+            ],
+            "backdrop_path": "/dQi56qgM8GYFUHqJqQE4dgSl56y.jpg",
+            "adult": false,
+            "overview": "A young boy finds a powerful otherworldly weapon, which he uses to save his older adoptive brother from a crew of thugs. Before long, the two of them are also pursued by federal agents and mysterious mercenaries aiming to reclaim their asset.",
+            "release_date": "2018-08-29"
+        },
+        {
+            "vote_count": 233,
+            "id": 532671,
+            "video": false,
+            "vote_average": 5.9,
+            "title": "The Prodigy",
+            "popularity": 31.741,
+            "poster_path": "/yyejodyk3lWncVjVhhrEkPctY9o.jpg",
+            "original_language": "en",
+            "original_title": "The Prodigy",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "backdrop_path": "/oxTgovZ3TQ8LLxifUm16ROMULP5.jpg",
+            "adult": false,
+            "overview": "A mother concerned about her young son's disturbing behavior thinks something supernatural may be affecting him.",
+            "release_date": "2019-02-06"
+        },
+        {
+            "vote_count": 347,
+            "id": 480414,
+            "video": false,
+            "vote_average": 5.6,
+            "title": "The Curse of La Llorona",
+            "popularity": 30.86,
+            "poster_path": "/jhZlXSnFUpNiLAek9EkPrtLEWQI.jpg",
+            "original_language": "en",
+            "original_title": "The Curse of La Llorona",
+            "genre_ids": [
+                53,
+                27,
+                9648
+            ],
+            "backdrop_path": "/2OKpu0Z6zD4meBQ8bYZb4FtF1bi.jpg",
+            "adult": false,
+            "overview": "A social worker dealing with the disappearance of two children fears for her own family after beginning the investigation.",
+            "release_date": "2019-04-17"
+        },
+        {
+            "vote_count": 3258,
+            "id": 8392,
+            "video": false,
+            "vote_average": 8.1,
+            "title": "My Neighbor Totoro",
+            "popularity": 30.235,
+            "poster_path": "/2i0OOjvi7CqNQA6ZtYJtL65P9oZ.jpg",
+            "original_language": "ja",
+            "original_title": "となりのトトロ",
+            "genre_ids": [
+                14,
+                16,
+                10751
+            ],
+            "backdrop_path": "/hoIqf9YjZM0oQOrFXp8DcucJ3Jg.jpg",
+            "adult": false,
+            "overview": "Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.",
+            "release_date": "1988-04-16"
+        },
+        {
+            "vote_count": 769,
+            "id": 457799,
+            "video": false,
+            "vote_average": 7,
+            "title": "Extremely Wicked, Shockingly Evil and Vile",
+            "popularity": 30.06,
+            "poster_path": "/bP8T3WWpFTvyITSzetR3UCnG45M.jpg",
+            "original_language": "en",
+            "original_title": "Extremely Wicked, Shockingly Evil and Vile",
+            "genre_ids": [
+                53,
+                80,
+                18,
+                36
+            ],
+            "backdrop_path": "/5yXNf13ly6kFQSbI5BZRQlDhCib.jpg",
+            "adult": false,
+            "overview": "A chronicle of the crimes of Ted Bundy, from the perspective of his longtime girlfriend, Elizabeth Kloepfer, who refused to believe the truth about him for years.",
+            "release_date": "2019-05-02"
+        },
+        {
+            "vote_count": 268,
+            "id": 445629,
+            "video": false,
+            "vote_average": 6.5,
+            "title": "Fighting with My Family",
+            "popularity": 29.867,
+            "poster_path": "/cVhe15rJLRjolunSWLBN6xQLyGU.jpg",
+            "original_language": "en",
+            "original_title": "Fighting with My Family",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "backdrop_path": "/mYKP6qcDUimVMAHQWLOuDHjO19S.jpg",
+            "adult": false,
+            "overview": "Born into a tight-knit wrestling family, Paige and her brother Zak are ecstatic when they get the once-in-a-lifetime opportunity to try out for the WWE. But when only Paige earns a spot in the competitive training program, she must leave her loved ones behind and face this new cutthroat world alone. Paige's journey pushes her to dig deep and ultimately prove to the world that what makes her different is the very thing that can make her a star.",
+            "release_date": "2019-02-14"
+        },
+        {
+            "vote_count": 11,
+            "id": 569594,
+            "video": false,
+            "vote_average": 6.6,
+            "title": "Bharat",
+            "popularity": 29.087,
+            "poster_path": "/aawdjzVsfKvRRIFu9Ni74wZyjc8.jpg",
+            "original_language": "hi",
+            "original_title": "भारत",
+            "genre_ids": [
+                18,
+                28
+            ],
+            "backdrop_path": "/1CpOFqgxOFOL2MxTWcIRfg6axy4.jpg",
+            "adult": false,
+            "overview": "At the cusp of India's birth as an Independent nation, a family makes an arduous journey to freedom at a cost. A young boy Bharat, makes a promise to his Father that he will keep his family together no matter what.",
+            "release_date": "2019-06-05"
+        },
+        {
+            "vote_count": 265,
+            "id": 440472,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "The Upside",
+            "popularity": 27.812,
+            "poster_path": "/hPZ2caow1PCND6qnerfgn6RTXdm.jpg",
+            "original_language": "en",
+            "original_title": "The Upside",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "backdrop_path": "/mdGUvN7yCyExPNO5f4zAzifk1l1.jpg",
+            "adult": false,
+            "overview": "Phillip is a wealthy quadriplegic who needs a caretaker to help him with his day-to-day routine in his New York penthouse. He decides to hire Dell, a struggling parolee who's trying to reconnect with his ex and his young son. Despite coming from two different worlds, an unlikely friendship starts to blossom.",
+            "release_date": "2019-01-10"
+        },
+        {
+            "vote_count": 76,
+            "id": 526050,
+            "video": false,
+            "vote_average": 6.3,
+            "title": "Little",
+            "popularity": 26.545,
+            "poster_path": "/4MDB6jJl3U7xK1Gw64zIqt9pQA4.jpg",
+            "original_language": "en",
+            "original_title": "Little",
+            "genre_ids": [
+                35,
+                14
+            ],
+            "backdrop_path": "/tmM78qRhpg0i2Cky8Q8hXKASOXY.jpg",
+            "adult": false,
+            "overview": "A woman receives the chance to relive the life of her younger self, at a point in her life when the pressures of adulthood become too much for her to bear.",
+            "release_date": "2019-04-04"
+        },
+        {
+            "vote_count": 8045,
+            "id": 424,
+            "video": false,
+            "vote_average": 8.5,
+            "title": "Schindler's List",
+            "popularity": 26.083,
+            "poster_path": "/yPisjyLweCl1tbgwgtzBCNCBle.jpg",
+            "original_language": "en",
+            "original_title": "Schindler's List",
+            "genre_ids": [
+                18,
+                36,
+                10752
+            ],
+            "backdrop_path": "/af98P1bc7lJsFjhHOVWXQgNNgSQ.jpg",
+            "adult": false,
+            "overview": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+            "release_date": "1993-12-15"
+        },
+        {
+            "vote_count": 132,
+            "id": 449459,
+            "video": false,
+            "vote_average": 5.4,
+            "title": "The Vanishing",
+            "popularity": 26.006,
+            "poster_path": "/5HKn2CecRi2OlyC3T6FZz4QqkW5.jpg",
+            "original_language": "en",
+            "original_title": "The Vanishing",
+            "genre_ids": [
+                53
+            ],
+            "backdrop_path": "/jK4m8gjLT5D2PNwoC0jJ0dGmWMu.jpg",
+            "adult": false,
+            "overview": "Three lighthouse keepers on an uninhabited island off the coast of Scotland discover something that isn't theirs to keep.",
+            "release_date": "2019-01-04"
+        },
+        {
+            "vote_count": 133,
+            "id": 471506,
+            "video": false,
+            "vote_average": 6.1,
+            "title": "Greta",
+            "popularity": 25.535,
+            "poster_path": "/9hBpFyJ3pGdupXbaC2L7nGvLMBn.jpg",
+            "original_language": "en",
+            "original_title": "Greta",
+            "genre_ids": [
+                53,
+                18,
+                9648
+            ],
+            "backdrop_path": "/n67gpLtNFXqpGkM2ZdQoPLjTnI.jpg",
+            "adult": false,
+            "overview": "A young woman returns an elderly widow’s lost purse, leading to an unlikely relationship between the two — until the young woman discovers her elder might not be all that she seems.",
+            "release_date": "2019-02-28"
+        },
+        {
+            "vote_count": 2771,
+            "id": 1368,
+            "video": false,
+            "vote_average": 7.3,
+            "title": "First Blood",
+            "popularity": 25.339,
+            "poster_path": "/bbYNNEGLXrV3lJpHDg7CKaPscCb.jpg",
+            "original_language": "en",
+            "original_title": "First Blood",
+            "genre_ids": [
+                28,
+                12,
+                53,
+                10752
+            ],
+            "backdrop_path": "/xiBsA8Qj5KhO4cUKz6RHDtKpBGs.jpg",
+            "adult": false,
+            "overview": "When former Green Beret John Rambo is harassed by local law enforcement and arrested for vagrancy, the Vietnam vet snaps, runs for the hills and rat-a-tat-tats his way into the action-movie hall of fame. Hounded by a relentless sheriff, Rambo employs heavy-handed guerilla tactics to shake the cops off his tail.",
+            "release_date": "1982-10-22"
+        },
+        {
+            "vote_count": 54,
+            "id": 496243,
+            "video": false,
+            "vote_average": 9,
+            "title": "Parasite",
+            "popularity": 25.298,
+            "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+            "original_language": "ko",
+            "original_title": "기생충",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "backdrop_path": "/zNTUIqdRBQAI4aJBGhwGvd6KpvW.jpg",
+            "adult": false,
+            "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+            "release_date": "2019-05-30"
+        },
+        {
+            "vote_count": 320,
+            "id": 452832,
+            "video": false,
+            "vote_average": 5.1,
+            "title": "Serenity",
+            "popularity": 24.689,
+            "poster_path": "/hgWAcic93phg4DOuQ8NrsgQWiqu.jpg",
+            "original_language": "en",
+            "original_title": "Serenity",
+            "genre_ids": [
+                53
+            ],
+            "backdrop_path": "/oOROXoQ402tHgK6NowmMUSLffkW.jpg",
+            "adult": false,
+            "overview": "Baker Dill is a fishing boat captain leading tours off a tranquil, tropical enclave called Plymouth Island. His quiet life is shattered, however, when his ex-wife Karen tracks him down with a desperate plea for help.",
+            "release_date": "2019-01-24"
+        },
+        {
+            "vote_count": 494,
+            "id": 451915,
+            "video": false,
+            "vote_average": 7.6,
+            "title": "Beautiful Boy",
+            "popularity": 24.578,
+            "poster_path": "/i7gsLrNxpSf8NF5IZIrcOEfMyA3.jpg",
+            "original_language": "en",
+            "original_title": "Beautiful Boy",
+            "genre_ids": [
+                18
+            ],
+            "backdrop_path": "/sOhtC4cmaYPOlcjXCWxxrx2NKKn.jpg",
+            "adult": false,
+            "overview": "After he and his first wife separate, journalist David Sheff struggles to help their teenage son, who goes from experimenting with drugs to becoming devastatingly addicted to methamphetamine.",
+            "release_date": "2018-10-12"
+        }
+    ],
+    "page": 2,
+    "total_results": 983,
+    "dates": {
+        "maximum": "2019-06-14",
+        "minimum": "2019-04-27"
+    },
+    "total_pages": 50
+}

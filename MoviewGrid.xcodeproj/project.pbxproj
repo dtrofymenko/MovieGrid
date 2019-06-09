@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152BEF0522AD36C60011653A /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0422AD36C60011653A /* MoviesService.swift */; };
+		152BEF0722AD36CF0011653A /* MoviesServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0622AD36CF0011653A /* MoviesServiceImp.swift */; };
+		152BEF0922AD36DF0011653A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0822AD36DF0011653A /* Movie.swift */; };
+		152BEF0B22AD3A110011653A /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0A22AD3A110011653A /* Cancelable.swift */; };
+		152BEF0D22AD3E5C0011653A /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0C22AD3E5C0011653A /* CustomError.swift */; };
+		152BEF0F22AD49A40011653A /* MoviesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF0E22AD49A40011653A /* MoviesServiceTests.swift */; };
+		152BEF1122AD4BE90011653A /* movie_now_playing.json in Resources */ = {isa = PBXBuildFile; fileRef = 152BEF1022AD4BE90011653A /* movie_now_playing.json */; };
+		152BEF1522AD52200011653A /* MultiPageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1422AD52200011653A /* MultiPageResult.swift */; };
+		152BEF1722AD59410011653A /* SharedFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1622AD59410011653A /* SharedFactory.swift */; };
+		152BEF1922AD59900011653A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1822AD59900011653A /* Config.swift */; };
+		152BEF1B22AD61D20011653A /* LoadingSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1A22AD61D20011653A /* LoadingSupplementaryView.swift */; };
 		1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570320A22AD04D500B0E3AF /* AppDelegate.swift */; };
 		1570321222AD04D600B0E3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1570321122AD04D600B0E3AF /* Assets.xcassets */; };
 		1570321522AD04D600B0E3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */; };
@@ -40,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152BEF0422AD36C60011653A /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		152BEF0622AD36CF0011653A /* MoviesServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServiceImp.swift; sourceTree = "<group>"; };
+		152BEF0822AD36DF0011653A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		152BEF0A22AD3A110011653A /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		152BEF0C22AD3E5C0011653A /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		152BEF0E22AD49A40011653A /* MoviesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServiceTests.swift; sourceTree = "<group>"; };
+		152BEF1022AD4BE90011653A /* movie_now_playing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_now_playing.json; sourceTree = "<group>"; };
+		152BEF1422AD52200011653A /* MultiPageResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPageResult.swift; sourceTree = "<group>"; };
+		152BEF1622AD59410011653A /* SharedFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFactory.swift; sourceTree = "<group>"; };
+		152BEF1822AD59900011653A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		152BEF1A22AD61D20011653A /* LoadingSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSupplementaryView.swift; sourceTree = "<group>"; };
 		1570320722AD04D500B0E3AF /* MoviewGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviewGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1570320A22AD04D500B0E3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1570321122AD04D600B0E3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +123,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		152BEF0222AD36BA0011653A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				152BEF0322AD36BA0011653A /* Movies */,
+				152BEF0A22AD3A110011653A /* Cancelable.swift */,
+				152BEF0C22AD3E5C0011653A /* CustomError.swift */,
+				152BEF1622AD59410011653A /* SharedFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		152BEF0322AD36BA0011653A /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				152BEF0822AD36DF0011653A /* Movie.swift */,
+				152BEF0422AD36C60011653A /* MoviesService.swift */,
+				152BEF0622AD36CF0011653A /* MoviesServiceImp.swift */,
+				152BEF1422AD52200011653A /* MultiPageResult.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		157031FE22AD04D500B0E3AF = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +168,11 @@
 		1570320922AD04D500B0E3AF /* MoviewGrid */ = {
 			isa = PBXGroup;
 			children = (
+				152BEF0222AD36BA0011653A /* Services */,
 				1570324522AD111400B0E3AF /* Utils */,
 				1570322A22AD056900B0E3AF /* Screens */,
 				1570320A22AD04D500B0E3AF /* AppDelegate.swift */,
+				152BEF1822AD59900011653A /* Config.swift */,
 				1570321122AD04D600B0E3AF /* Assets.xcassets */,
 				1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */,
 				1570321622AD04D600B0E3AF /* Info.plist */,
@@ -138,7 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				1570321F22AD04D700B0E3AF /* MoviewGridTests.swift */,
+				152BEF0E22AD49A40011653A /* MoviesServiceTests.swift */,
 				1570322122AD04D700B0E3AF /* Info.plist */,
+				152BEF1022AD4BE90011653A /* movie_now_playing.json */,
 			);
 			path = MoviewGridTests;
 			sourceTree = "<group>";
@@ -171,6 +219,7 @@
 				1570323D22AD0CA900B0E3AF /* MoviesListViewController.swift */,
 				1570323C22AD0CA900B0E3AF /* MoviesListViewModel.swift */,
 				1570324122AD0E6600B0E3AF /* MovieCell.swift */,
+				152BEF1A22AD61D20011653A /* LoadingSupplementaryView.swift */,
 			);
 			path = MoviesList;
 			sourceTree = "<group>";
@@ -216,6 +265,7 @@
 				1570320422AD04D500B0E3AF /* Frameworks */,
 				1570320522AD04D500B0E3AF /* Resources */,
 				1570323422AD061300B0E3AF /* swiftlint */,
+				02F23ADAE0A9AA41C23C1556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +284,7 @@
 				1570321722AD04D600B0E3AF /* Sources */,
 				1570321822AD04D600B0E3AF /* Frameworks */,
 				1570321922AD04D600B0E3AF /* Resources */,
+				1B057052F37B799129BB81C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,12 +350,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152BEF1122AD4BE90011653A /* movie_now_playing.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02F23ADAE0A9AA41C23C1556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoviewGrid/Pods-MoviewGrid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoviewGrid/Pods-MoviewGrid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1570323422AD061300B0E3AF /* swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +396,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		1B057052F37B799129BB81C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoviewGridTests/Pods-MoviewGridTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoviewGridTests/Pods-MoviewGridTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		1FEB91A946A518012A5AB6CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -374,16 +470,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152BEF0B22AD3A110011653A /* Cancelable.swift in Sources */,
+				152BEF1722AD59410011653A /* SharedFactory.swift in Sources */,
+				152BEF0D22AD3E5C0011653A /* CustomError.swift in Sources */,
 				1570324722AD112000B0E3AF /* UIViewController+Extension.swift in Sources */,
 				1570324F22AD29FA00B0E3AF /* Colors.swift in Sources */,
+				152BEF1522AD52200011653A /* MultiPageResult.swift in Sources */,
 				1570325722AD322000B0E3AF /* MovieDetailsViewController.swift in Sources */,
 				1570324222AD0E6600B0E3AF /* MovieCell.swift in Sources */,
+				152BEF0522AD36C60011653A /* MoviesService.swift in Sources */,
 				1570325122AD2A3600B0E3AF /* UIColor+Extension.swift in Sources */,
+				152BEF0922AD36DF0011653A /* Movie.swift in Sources */,
+				152BEF0722AD36CF0011653A /* MoviesServiceImp.swift in Sources */,
 				1570323F22AD0CA900B0E3AF /* MoviesListViewModel.swift in Sources */,
 				1570322F22AD05AB00B0E3AF /* ViewController.swift in Sources */,
 				1570324022AD0CA900B0E3AF /* MoviesListViewController.swift in Sources */,
 				1570324422AD107000B0E3AF /* FlowCoordinator.swift in Sources */,
 				1570325522AD322000B0E3AF /* MovieDetailsViewModel.swift in Sources */,
+				152BEF1B22AD61D20011653A /* LoadingSupplementaryView.swift in Sources */,
+				152BEF1922AD59900011653A /* Config.swift in Sources */,
 				1570323122AD05B700B0E3AF /* ViewModel.swift in Sources */,
 				1570323322AD05C400B0E3AF /* ModelViewController.swift in Sources */,
 				1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */,
@@ -394,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152BEF0F22AD49A40011653A /* MoviesServiceTests.swift in Sources */,
 				1570322022AD04D700B0E3AF /* MoviewGridTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,7 +690,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFA1B7EF4BD2AB5814059026 /* Pods-MoviewGridTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoviewGridTests/Info.plist;
@@ -605,7 +710,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BE44608F5F06368738F8A66 /* Pods-MoviewGridTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoviewGridTests/Info.plist;

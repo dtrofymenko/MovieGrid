@@ -8,4 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {}
+class ViewController: UIViewController {
+    private(set) var isFirstAppearing: Bool = true
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        isFirstAppearing = false
+        super.viewDidAppear(animated)
+    }
+}

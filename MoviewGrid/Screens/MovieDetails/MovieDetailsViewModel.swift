@@ -9,10 +9,10 @@
 import Foundation
 
 struct MovieDetails {
-    let name: String
+    let title: String
     let url: URL?
 
-    static let stub = MoviesListItem(name: "Antman", url: URL(string: "124"))
+    static let stub = MovieDetails(title: "Antman", url: URL(string: "124"))
 }
 
 protocol MovieDetailsView: ModelView {}

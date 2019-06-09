@@ -11,14 +11,18 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow? = UIWindow()
     var flowCoordinator: FlowCoordinator?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if nil != NSClassFromString("XCTest") {
+            window?.rootViewController = UIViewController()
+            window?.makeKeyAndVisible()
+            return true
+        }
 
         setupUI()
-
         return true
     }
 
@@ -30,10 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
              NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18.0, weight: .regular)]
         navigationController.navigationBar.tintColor = .tintColor
 
-        let window = UIWindow()
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-        self.window = window
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
 
         flowCoordinator = FlowCoordinator(navigationController: navigationController)
         flowCoordinator?.start()

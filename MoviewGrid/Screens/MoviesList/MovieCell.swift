@@ -29,7 +29,8 @@ class MovieCell: UICollectionViewCell {
     }
 
     func update(item: MoviesListItem) {
-        titleLabel.text = item.name
+        titleLabel.text = item.title
+        contentView.setNeedsLayout()
     }
 
     // MARK: - UIView
@@ -43,6 +44,7 @@ class MovieCell: UICollectionViewCell {
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10.0
         contentView.clipsToBounds = true
+
         titleLabel.font = UIFont.systemFont(ofSize: 18.0, weight: .regular)
         titleLabel.textColor = UIColor.tintColor
     }

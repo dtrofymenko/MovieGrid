@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  Config.swift
 //  MoviewGrid
 //
 //  Created by Dmytro Trofymenko on 6/9/19.
@@ -8,10 +8,8 @@
 
 import Foundation
 
-protocol ModelView: class {}
+struct Config {
+    static let current = Config(apiKey: "ebea8cfca72fdff8d2624ad7bbf78e4c")
 
-class ViewModel {
-    weak var baseView: ModelView!
-
-    func viewWillAppear(isFirstAppearing: Bool) {}
+    let apiKey: String
 }
