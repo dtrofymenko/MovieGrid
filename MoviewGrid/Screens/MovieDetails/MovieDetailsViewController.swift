@@ -10,13 +10,14 @@ import UIKit
 import Kingfisher
 
 class MovieDetailsViewController: ModelViewController<MovieDetailsViewModel>, MovieDetailsView {
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var scoreInfoView: MovieInfoItemView!
     @IBOutlet weak var ratingInfoView: MovieInfoItemView!
     @IBOutlet weak var relaseDataInfoView: MovieInfoItemView!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
+
     var viewData: MovieDetailsViewModel.ViewData {
         return viewModel.viewData
     }
@@ -25,13 +26,14 @@ class MovieDetailsViewController: ModelViewController<MovieDetailsViewModel>, Mo
         super.viewDidLoad()
         title = viewData.title
 
+        posterImageView.layer.cornerRadius = 10.0
         scoreInfoView.title = NSLocalizedString("Score:", comment: "")
-        scoreInfoView.value = "8.2"
         ratingInfoView.title = NSLocalizedString("Rating:", comment: "")
-        ratingInfoView.value = "R"
         relaseDataInfoView.title = NSLocalizedString("Release Date:", comment: "")
-        relaseDataInfoView.value = "July 17, 2015"
 
+        ratingInfoView.value = "R"
+        relaseDataInfoView.value = "July 17, 2015"
+        scoreInfoView.value = "8.2"
         overviewLabel.text = viewData.overview
         titleLabel.text = viewData.title
     }
@@ -42,6 +44,8 @@ class MovieDetailsViewController: ModelViewController<MovieDetailsViewModel>, Mo
         posterImageView.kf.setImage(with: viewData.posterURL,
                                     options: [.backgroundDecode,
                                               .scaleFactor(UIScreen.main.scale)])
-
+        backgroundImageView.kf.setImage(with: viewData.posterURL,
+                                        options: [.backgroundDecode,
+                                                  .scaleFactor(UIScreen.main.scale)])
     }
 }
