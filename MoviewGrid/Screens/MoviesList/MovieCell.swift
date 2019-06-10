@@ -39,8 +39,7 @@ class MovieCell: UICollectionViewCell {
         guard let posterURL = item?.posterURL else { return }
         imageView.kf.setImage(with: posterURL,
                               options: [.backgroundDecode,
-                                        .scaleFactor(UIScreen.main.scale),
-                                        .downloadPriority(1.0)])
+                                        .scaleFactor(UIScreen.main.scale)])
     }
 
     // MARK: - UIView

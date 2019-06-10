@@ -8,22 +8,24 @@
 
 import Foundation
 
-struct MovieDetails {
-    let title: String
-    let url: URL?
-
-    static let stub = MovieDetails(title: "Antman", url: URL(string: "124"))
-}
-
 protocol MovieDetailsView: ModelView {}
 
 class MovieDetailsViewModel: ViewModel {
+    struct ViewData {
+        let title: String
+        let posterURL: URL?
+        let overview: String
+    }
+
     var view: MovieDetailsView { return (baseView as? MovieDetailsView)! }
 
-    var movieDetails = MovieDetails.stub
+    var viewData: ViewData
 
     private let movie: Movie
     init(movie: Movie) {
         self.movie = movie
+        viewData = ViewData(title: movie.title,
+                            posterURL: movie.makePosterURL(),
+                            overview: movie.overview)
     }
 }

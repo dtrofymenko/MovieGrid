@@ -11,4 +11,5 @@ import UIKit
 extension UIColor {
     static let tintColor = UIColor(rgb: 0x9B9BAD)
     static let backgroundColor = UIColor(rgb: 0xF5F7FC)
+    static let detailsTextColor = UIColor(rgb: 0xBDBFC0)
 }
