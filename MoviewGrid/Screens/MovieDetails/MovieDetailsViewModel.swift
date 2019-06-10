@@ -22,8 +22,8 @@ class MovieDetailsViewModel: ViewModel {
 
     var movieDetails = MovieDetails.stub
 
-    private let movie: NSObject
-    init(movie: NSObject) {
+    private let movie: Movie
+    init(movie: Movie) {
         self.movie = movie
     }
 }

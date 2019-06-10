@@ -18,6 +18,7 @@
 		152BEF1722AD59410011653A /* SharedFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1622AD59410011653A /* SharedFactory.swift */; };
 		152BEF1922AD59900011653A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1822AD59900011653A /* Config.swift */; };
 		152BEF1B22AD61D20011653A /* LoadingSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1A22AD61D20011653A /* LoadingSupplementaryView.swift */; };
+		152BEF1D22AEAB700011653A /* Movie+PosterURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BEF1C22AEAB700011653A /* Movie+PosterURL.swift */; };
 		1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570320A22AD04D500B0E3AF /* AppDelegate.swift */; };
 		1570321222AD04D600B0E3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1570321122AD04D600B0E3AF /* Assets.xcassets */; };
 		1570321522AD04D600B0E3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1570321322AD04D600B0E3AF /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 		152BEF1622AD59410011653A /* SharedFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFactory.swift; sourceTree = "<group>"; };
 		152BEF1822AD59900011653A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		152BEF1A22AD61D20011653A /* LoadingSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSupplementaryView.swift; sourceTree = "<group>"; };
+		152BEF1C22AEAB700011653A /* Movie+PosterURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+PosterURL.swift"; sourceTree = "<group>"; };
 		1570320722AD04D500B0E3AF /* MoviewGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviewGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1570320A22AD04D500B0E3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1570321122AD04D600B0E3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				152BEF0422AD36C60011653A /* MoviesService.swift */,
 				152BEF0622AD36CF0011653A /* MoviesServiceImp.swift */,
 				152BEF1422AD52200011653A /* MultiPageResult.swift */,
+				152BEF1C22AEAB700011653A /* Movie+PosterURL.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				1570323122AD05B700B0E3AF /* ViewModel.swift in Sources */,
 				1570323322AD05C400B0E3AF /* ModelViewController.swift in Sources */,
 				1570320B22AD04D500B0E3AF /* AppDelegate.swift in Sources */,
+				152BEF1D22AEAB700011653A /* Movie+PosterURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

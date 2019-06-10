@@ -29,13 +29,13 @@ extension FlowCoordinator: MoviesListViewModelDelegate {
     }
 
     // MARK: - MoviesListViewModelDelegate
-    func moviesListViewModelDidSelectMovie(_ viewModel: MoviesListViewModel, didSelectMovie movie: NSObject) {
+    func moviesListViewModel(_ viewModel: MoviesListViewModel, didSelectMovie movie: Movie) {
         showMovieDetailsScreen(movie: movie)
     }
 }
 
 extension FlowCoordinator {
-    func showMovieDetailsScreen(movie: NSObject) {
+    func showMovieDetailsScreen(movie: Movie) {
         let viewModel = MovieDetailsViewModel(movie: movie)
         guard let viewController = MovieDetailsViewController.instantiateFromStoryboard(viewModel: viewModel) else {
             return

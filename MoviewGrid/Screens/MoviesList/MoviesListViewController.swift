@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MoviesListViewController: ModelViewController<MoviesListViewModel>, MoviesListView,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -69,9 +70,15 @@ class MoviesListViewController: ModelViewController<MoviesListViewModel>, Movies
         return view
     }
 
+    // MARK: - UICollectionViewDataSourcePrefetching
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        let urls = indexPaths.compactMap { viewData.items[$0.row].posterURL }
+        ImagePrefetcher(urls: urls).start()
+    }
+
     // MARK: - UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel?.selectItem(viewData.items[indexPath.row])
+        viewData.items[indexPath.row].tapHandler()
     }
 
     func collectionView(_ collectionView: UICollectionView,

@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 struct MoviesListItem: Equatable {
     let title: String
     let posterURL: URL?
+    let tapHandler: () -> Void
+
+    static func == (lhs: MoviesListItem, rhs: MoviesListItem) -> Bool {
+        return lhs.title == rhs.title
+    }
 }
 
 protocol MoviesListView: ModelView {
@@ -18,8 +24,7 @@ protocol MoviesListView: ModelView {
 }
 
 protocol MoviesListViewModelDelegate: class {
-    func moviesListViewModelDidSelectMovie(_ viewModel: MoviesListViewModel,
-                                           didSelectMovie movie: NSObject)
+    func moviesListViewModel(_ viewModel: MoviesListViewModel, didSelectMovie movie: Movie)
 }
 
 class MoviesListViewModel: ViewModel {
@@ -53,10 +58,6 @@ class MoviesListViewModel: ViewModel {
         moviesService = factory.makeMoviesService()
     }
 
-    func selectItem(_ item: MoviesListItem) {
-        delegate?.moviesListViewModelDidSelectMovie(self, didSelectMovie: NSObject())
-    }
-
     func loadMore() {
         updateViewData { $0.isLoadingMore = true }
         load(page: nextPage)
@@ -76,7 +77,7 @@ class MoviesListViewModel: ViewModel {
         self.viewData = viewData
     }
 
-    func load(page: Int) {
+    private func load(page: Int) {
         guard !isLoading else { return }
         isLoading = true
         moviesService.loadMovies(page: page) { [weak self] result in
@@ -91,11 +92,19 @@ class MoviesListViewModel: ViewModel {
                 case .success(let model):
                     self.currentPage = page
                     viewData.items += model.results.map {
-                        return MoviesListItem(title: $0.title,
-                                              posterURL:$0.posterURL(width: 300))
+                        return self.makeItemFromMovie($0)
                     }
                 }
             }
         }
+    }
+
+    private func makeItemFromMovie(_ movie: Movie) -> MoviesListItem {
+        return MoviesListItem(title: movie.title,
+                              posterURL: movie.makePosterURL(),
+                              tapHandler: { [weak self] in
+                                guard let self = self else { return }
+                                self.delegate?.moviesListViewModel(self, didSelectMovie: movie)
+        })
     }
 }

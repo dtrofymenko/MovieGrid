@@ -9,7 +9,10 @@
 import Foundation
 
 struct Config {
-    static let current = Config(apiKey: "ebea8cfca72fdff8d2624ad7bbf78e4c")
+    static let current = Config()
 
-    let apiKey: String
+    let posterBaseURL = URL(string: "https://image.tmdb.org/t/p/")!
+    let posterWidth = 500
+
+    let apiKey: String = "ebea8cfca72fdff8d2624ad7bbf78e4c"
 }

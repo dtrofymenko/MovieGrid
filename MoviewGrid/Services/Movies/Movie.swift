@@ -6,7 +6,7 @@
 //  Copyright © 2019 Dmytro Trofymenko. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Movie: Decodable {
     let identifier: Int
@@ -41,13 +41,5 @@ struct Movie: Decodable {
         }
         self.releaseDate = releaseDate
         overview = try values.decode(String.self, forKey: .overview)
-    }
-}
-
-extension Movie {
-    func posterURL(width: Int) -> URL? {
-        guard let posterPath = posterPath else { return nil }
-        let widthComponent = "w\(width)"
-        return URL(string: "http://image.tmdb.org/t/p/" + widthComponent + posterPath)
     }
 }
