@@ -15,6 +15,7 @@ struct Movie: Decodable {
     let voteAverage: Float
     let releaseDate: Date
     let overview: String
+    let isAdult: Bool
 
     enum CodingKeys: String, CodingKey {
         case identifier = "id"
@@ -23,6 +24,7 @@ struct Movie: Decodable {
         case voteAverage = "vote_average"
         case releaseDate = "release_date"
         case overview
+        case isAdult = "adult"
     }
 
     init(from decoder: Decoder) throws {
@@ -41,5 +43,6 @@ struct Movie: Decodable {
         }
         self.releaseDate = releaseDate
         overview = try values.decode(String.self, forKey: .overview)
+        isAdult = try values.decode(Bool.self, forKey: .isAdult)
     }
 }

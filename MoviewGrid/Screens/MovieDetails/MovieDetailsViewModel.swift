@@ -13,19 +13,41 @@ protocol MovieDetailsView: ModelView {}
 class MovieDetailsViewModel: ViewModel {
     struct ViewData {
         let title: String
+        let releaseDateText: String
         let posterURL: URL?
         let overview: String
+        let scoreText: String
+        let ratingText: String
     }
 
     var view: MovieDetailsView { return (baseView as? MovieDetailsView)! }
 
-    var viewData: ViewData
+    var viewData: ViewData!
+    private static let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy"
+        return dateFormatter
+    }()
 
     private let movie: Movie
     init(movie: Movie) {
         self.movie = movie
-        viewData = ViewData(title: movie.title,
+        super.init()
+        setup()
+    }
+
+    // MARK: - Private
+    private func setup() {
+        var title: String = movie.title
+        if let releaseYear = Calendar.current.dateComponents([.year], from: movie.releaseDate).year {
+            title = "\(movie.title) (\(releaseYear))"
+        }
+        let dateString = MovieDetailsViewModel.dateFormatter.string(from: movie.releaseDate)
+        viewData = ViewData(title: title,
+                            releaseDateText: dateString,
                             posterURL: movie.makePosterURL(),
-                            overview: movie.overview)
+                            overview: movie.overview,
+                            scoreText: String(format: "%.2f", movie.voteAverage),
+                            ratingText: movie.isAdult ? "NC-17" : "G")
     }
 }

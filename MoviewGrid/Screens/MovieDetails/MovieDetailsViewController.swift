@@ -31,9 +31,9 @@ class MovieDetailsViewController: ModelViewController<MovieDetailsViewModel>, Mo
         ratingInfoView.title = NSLocalizedString("Rating:", comment: "")
         relaseDataInfoView.title = NSLocalizedString("Release Date:", comment: "")
 
-        ratingInfoView.value = "R"
-        relaseDataInfoView.value = "July 17, 2015"
-        scoreInfoView.value = "8.2"
+        ratingInfoView.value = viewData.ratingText
+        relaseDataInfoView.value = viewData.releaseDateText
+        scoreInfoView.value = viewData.scoreText
         overviewLabel.text = viewData.overview
         titleLabel.text = viewData.title
     }
