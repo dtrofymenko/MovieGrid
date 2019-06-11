@@ -47,6 +47,7 @@ class MoviesServiceTests: MoviewGridTests {
         }
         waitForExpectations(timeout: 1.0, handler: nil)
 
+        service = MoviesServiceImp(apiKey: "dummy_key", factory: self)
         connectivityServiceMock.isConnected = false
         expecta = expectation(description: "expectation")
         service.loadMovies(page: 1) { result in

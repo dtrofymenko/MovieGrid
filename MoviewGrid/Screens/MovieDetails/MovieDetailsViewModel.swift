@@ -39,10 +39,14 @@ class MovieDetailsViewModel: ViewModel {
     // MARK: - Private
     private func setup() {
         var title: String = movie.title
-        if let releaseYear = Calendar.current.dateComponents([.year], from: movie.releaseDate).year {
-            title = "\(movie.title) (\(releaseYear))"
+        var dateString = ""
+
+        if let releaseDate = movie.releaseDate {
+            if let releaseYear = Calendar.current.dateComponents([.year], from: releaseDate).year {
+                title = "\(movie.title) (\(releaseYear))"
+            }
+            dateString = MovieDetailsViewModel.dateFormatter.string(from: releaseDate)
         }
-        let dateString = MovieDetailsViewModel.dateFormatter.string(from: movie.releaseDate)
         viewData = ViewData(title: title,
                             releaseDateText: dateString,
                             posterURL: movie.makePosterURL(),

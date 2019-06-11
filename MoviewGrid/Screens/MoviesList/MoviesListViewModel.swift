@@ -43,6 +43,7 @@ class MoviesListViewModel: ViewModel {
     private let firstPage: Int = 1
     private var isLoadingInProcess: Bool = false
     private var currentPage: Int = 0
+    private var totalPages: Int = 1
     private var nextPage: Int {
         return currentPage + 1
     }
@@ -60,6 +61,7 @@ class MoviesListViewModel: ViewModel {
     }
 
     func loadMore() {
+        guard nextPage < totalPages else { return }
         updateViewData { $0.isLoadingMore = true }
         load(page: nextPage)
     }
@@ -99,6 +101,7 @@ class MoviesListViewModel: ViewModel {
                 case .failure: break
                 case .success(let model):
                     self.currentPage = page
+                    self.totalPages = model.totalPages
                     let newItems = model.results.map {
                         return self.makeItemFromMovie($0)
                     }
