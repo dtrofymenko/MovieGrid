@@ -47,13 +47,13 @@ class MovieInfoItemView: UIView {
         titleLabel = UILabel()
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
-        titleLabel.font = .systemFont(ofSize: 20.0, weight: .light)
+        titleLabel.font = .systemFont(ofSize: 16.0, weight: .light)
         titleLabel.textColor = .detailsTextColor
 
         valueLabel = UILabel()
         valueLabel.setContentCompressionResistancePriority(.required, for: .vertical)
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
-        valueLabel.font = .systemFont(ofSize: 24.0, weight: .regular)
+        valueLabel.font = .systemFont(ofSize: 20.0, weight: .regular)
         valueLabel.textColor = .white
 
         addSubview(titleLabel)
