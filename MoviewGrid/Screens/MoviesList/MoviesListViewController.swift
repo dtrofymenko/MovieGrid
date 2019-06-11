@@ -11,7 +11,7 @@ import Kingfisher
 
 class MoviesListViewController: ModelViewController<MoviesListViewModel>, MoviesListView,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
+    private let refreshControl = UIRefreshControl()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
 
@@ -31,21 +31,28 @@ class MoviesListViewController: ModelViewController<MoviesListViewModel>, Movies
 
         collectionViewLayout.minimumLineSpacing = 15.0
         collectionViewLayout.minimumInteritemSpacing = 20.0
+        collectionViewLayout.sectionInset = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
 
         collectionView.backgroundColor = .backgroundColor
-        collectionView.contentInset = UIEdgeInsets(top: 20.0,
-                                                   left: 20.0,
-                                                   bottom: 20.0,
-                                                   right: 20.0)
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        collectionView.refreshControl = refreshControl
     }
 
     // MARK: - MoviesListView
     func viewDataDidUpdate() {
         collectionView.reloadData()
         collectionView.setNeedsLayout()
+        if !viewData.isRefreshing && refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        } else if viewData.isRefreshing && !refreshControl.isRefreshing {
+            refreshControl.beginRefreshing()
+        }
     }
 
     // MARK: - Private
+    @objc private func refresh() {
+        viewModel.refresh()
+    }
 
     // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -98,8 +105,8 @@ class MoviesListViewController: ModelViewController<MoviesListViewModel>, Movies
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let contentWidth = view.bounds.width -
-            collectionView.contentInset.left -
-            collectionView.contentInset.right -
+            self.collectionViewLayout.sectionInset.left -
+            self.collectionViewLayout.sectionInset.right -
             self.collectionViewLayout.minimumInteritemSpacing
         var cellSize = CGSize(width: (contentWidth / CGFloat(numberOfCellsInRow)).rounded(.down), height: 0.0)
         cellSize.height = (cellSize.width * 36.0 / 24.0).rounded(.down)

@@ -32,6 +32,7 @@ class MoviesListViewModel: ViewModel {
     struct ViewData: Equatable {
         var items: [MoviesListItem] = []
         var isLoadingMore: Bool = false
+        var isRefreshing: Bool = false
     }
 
     typealias Factory = MoviesServiceFactory
@@ -39,8 +40,8 @@ class MoviesListViewModel: ViewModel {
     weak var delegate: MoviesListViewModelDelegate?
 
     private var view: MoviesListView { return (baseView as? MoviesListView)! }
-    private var isLoading: Bool = false
     private let firstPage: Int = 1
+    private var isLoadingInProcess: Bool = false
     private var currentPage: Int = 0
     private var nextPage: Int {
         return currentPage + 1
@@ -63,10 +64,15 @@ class MoviesListViewModel: ViewModel {
         load(page: nextPage)
     }
 
+    func refresh() {
+        updateViewData { $0.isRefreshing = true }
+        load(page: firstPage)
+    }
+
     // MARK: - ViewModel
     override func viewWillAppear(isFirstAppearing: Bool) {
         if isFirstAppearing {
-            load(page: firstPage)
+            refresh()
         }
     }
 
@@ -78,21 +84,29 @@ class MoviesListViewModel: ViewModel {
     }
 
     private func load(page: Int) {
-        guard !isLoading else { return }
-        isLoading = true
+        guard !isLoadingInProcess else { return }
+        isLoadingInProcess = true
+
         moviesService.loadMovies(page: page) { [weak self] result in
             guard let self = self else { return }
-            self.isLoading = false
+            self.isLoadingInProcess = false
 
             self.updateViewData { viewData in
                 viewData.isLoadingMore = false
+                viewData.isRefreshing = false
 
                 switch result {
                 case .failure: break
                 case .success(let model):
                     self.currentPage = page
-                    viewData.items += model.results.map {
+                    let newItems = model.results.map {
                         return self.makeItemFromMovie($0)
+                    }
+
+                    if page == self.firstPage {
+                        viewData.items = newItems
+                    } else {
+                        viewData.items += newItems
                     }
                 }
             }
