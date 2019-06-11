@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MultiPageResult<T: Decodable>: Decodable {
+struct MultiPageResult<T: Codable>: Codable {
     let page: Int
     let totalPages: Int
     let results: [T]

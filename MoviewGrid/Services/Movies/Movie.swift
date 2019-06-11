@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Movie: Decodable {
+struct Movie: Codable {
     let identifier: Int
     let title: String
     let posterPath: String?

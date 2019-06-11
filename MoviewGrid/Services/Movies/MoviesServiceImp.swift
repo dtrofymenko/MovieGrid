@@ -10,76 +10,39 @@ import Foundation
 import Alamofire
 
 class MoviesServiceImp: MoviesService {
-    private let baseURL = URL(string: "https://api.themoviedb.org/3/")!
-    private let session: URLSession
+    typealias Factory = ConnectivityServiceFactory
 
-    let apiKey: String
-    init(apiKey: String) {
-        self.apiKey = apiKey
-        let configuration = URLSessionConfiguration.default
-        session = URLSession(configuration: configuration)
+    let remote: MoviesRemote
+    let cache = MoviesCache()
+    let connectivity: ConnectivityService
+
+    init(apiKey: String, factory: Factory = SharedFactory.shared) {
+        remote = MoviesRemote(apiKey: apiKey)
+        connectivity = factory.makeConnectivityService()
     }
 
     @discardableResult
     func loadMovies(page: Int, completion: @escaping (Swift.Result<MultiPageResult<Movie>, Swift.Error>) -> Void) -> Cancelable {
-        guard let url = makeURL(endpoint: "movie/now_playing", parameters: ["page": "\(page)"]) else {
-            fatalError()
+        if connectivity.isConnected {
+            return loadRemote(page: page, completion: completion)
+        } else {
+            return loadCache(page: page, completion: completion)
         }
-        return load(url: url, completion: completion)
     }
 
     // MARK: - Private
-    private func load<T: Decodable>(url: URL, completion: @escaping (Swift.Result<T, Swift.Error>) -> Void) -> Cancelable {
-        let request = Alamofire.request(url).responseData(queue: DispatchQueue.global(qos: .userInitiated)) { response  in
-            let complete: (Swift.Result<T, Swift.Error>) -> Void = { result in
-                DispatchQueue.main.async {
-                    if case .failure(let error) = result {
-                        NSLog("\(error)")
-                    }
-                    completion(result)
-                }
-            }
+    private func loadRemote(page: Int, completion: @escaping (Swift.Result<MultiPageResult<Movie>, Swift.Error>) -> Void) -> Cancelable {
+        return remote.loadMovies(page: page) { [weak self] result in
+            guard let self = self else { return }
 
-            guard nil == response.result.error else {
-                complete(.failure(response.result.error!))
-                return
+            if case .success(let data) = result {
+                self.cache.cache(data: data)
             }
-
-            guard let data = response.data else {
-                complete(.failure(CustomError.unknownError))
-                return
-            }
-
-            let decoder = JSONDecoder()
-
-            let model: T
-            do {
-                model = try decoder.decode(T.self, from: data)
-            } catch let error {
-                complete(.failure(error))
-                return
-            }
-            complete(.success(model))
-            }
-            .validate()
-
-        return request
+            completion(result)
+        }
     }
 
-    private func makeURL(endpoint: String, parameters: [String: String]) -> URL? {
-        let url = baseURL.appendingPathComponent(endpoint)
-        guard var components = URLComponents(url: url.absoluteURL, resolvingAgainstBaseURL: false) else { return nil }
-
-        var parameters = parameters
-        parameters["api_key"] = apiKey
-        parameters["language"] = NSLocale.current.languageCode ?? "en-US"
-
-        components.queryItems = parameters.map { key, value -> URLQueryItem in
-            return URLQueryItem(name: key, value: value)
-        }
-
-        return components.url
+    private func loadCache(page: Int, completion: @escaping (Swift.Result<MultiPageResult<Movie>, Swift.Error>) -> Void) -> Cancelable {
+        return cache.loadMovies(page: page) { result in completion(result) }
     }
 }
-
-extension DataRequest: Cancelable {}
