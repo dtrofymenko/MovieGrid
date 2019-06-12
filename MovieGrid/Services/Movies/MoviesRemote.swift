@@ -23,7 +23,10 @@ class MoviesRemote {
     @discardableResult
     func loadMovies(page: Int, completion: @escaping (Swift.Result<MultiPageResult<Movie>, Swift.Error>) -> Void) -> Cancelable {
         guard let url = makeURL(endpoint: "movie/now_playing", parameters: ["page": "\(page)"]) else {
-            fatalError()
+            DispatchQueue.main.async {
+                completion(.failure(AFError.parameterEncodingFailed(reason: .missingURL)))
+            }
+            return DummyCancelable()
         }
         return load(url: url, completion: completion)
     }

@@ -11,3 +11,10 @@ import Foundation
 protocol Cancelable {
     func cancel()
 }
+
+class DummyCancelable: Cancelable {
+    var isCancelled: Bool = false
+    func cancel() {
+        isCancelled = true
+    }
+}

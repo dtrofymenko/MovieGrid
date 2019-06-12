@@ -14,7 +14,7 @@ enum MoviesCacheError: Swift.Error {
 
 class MoviesCache {
     private static let cacheKey = "moviesCacheKey"
-    private let queue = DispatchQueue(label: UUID().uuidString, qos: .utility)
+    private let queue = DispatchQueue(label: "moviesCache", qos: .utility)
 
     private var cachedData: [Int: MultiPageResult<Movie>] = [:] {
         didSet {
@@ -69,12 +69,5 @@ class MoviesCache {
             }
             self.cachedData = cachedData
         }
-    }
-}
-
-class DummyCancelable: Cancelable {
-    var isCancelled: Bool = false
-    func cancel() {
-        isCancelled = true
     }
 }
