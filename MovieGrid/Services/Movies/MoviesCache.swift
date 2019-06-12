@@ -14,7 +14,10 @@ enum MoviesCacheError: Swift.Error {
 
 class MoviesCache {
     private static let cacheKey = "moviesCacheKey"
-    private let queue = DispatchQueue(label: "moviesCache", qos: .utility)
+    private static let queue = DispatchQueue(label: "moviesCache", qos: .utility)
+    private var queue: DispatchQueue {
+        return MoviesCache.queue
+    }
 
     private var cachedData: [Int: MultiPageResult<Movie>] = [:] {
         didSet {
