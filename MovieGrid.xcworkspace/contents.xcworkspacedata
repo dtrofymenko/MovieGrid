@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/dtrofymenko/Projects/MoviewGrid/MovieGrid.xcodeproj">
+      location = "group:MovieGrid.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MovieGrid.xcodeproj">
    </FileRef>
 </Workspace>
